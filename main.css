@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 70), rgb(28, 181, 224));
+}
+
+header {
+    background: linear-gradient(to right, rgb(0, 57, 115), rgb(112, 115, 216));
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ul > li {
+    list-style: none;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.logo {
+font-size: 2.3rem;
+color: white;
+}
+.criar-conta {
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border:3px solid dodgerblue;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+.criar-conta:hover{
+    transition: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(7, 141, 219, 0.637), 0 6px 20px 0 rgba(13, 119, 219, 0.644);
+}
+
+.box-login {
+    display: none;
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-60%) translateX(-50%);
+}
+.container {
+   height: 80vh;
+}
+.box-Cadastro{
+    width: 55%;
+    height: 79%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+form > .flex-row-input{
+    display: flex;
+    flex-direction: row; 
+}
+form > .flex-row{
+    display: flex;
+    flex-direction: row; 
+}
+form > .justify-flex{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.fecebook-form-login{
+    display: none;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translateY(-60%) translateX(-50%);
+}
+.fecebook-form-cadastro{
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translateY(-60%) translateX(-50%);
+}
+.fecebook-form-login input[type="text"] {
+    background:linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150));
+    color: white;
+    width: 420px;
+    height: 35px;
+    margin: 8px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+.fecebook-form-login input[type="password"] {
+    background: linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150));
+    width: 420px;
+    height: 35px;
+    margin: 8px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+.fecebook-form-cadastro input {
+    background:linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150));
+    color: white;
+    width: 420px;
+    height: 35px;
+    margin: 8px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+.fecebook-form-cadastro > .flex-row-input input{
+    background:linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150));
+    color: white;
+    width: 210px;
+    height: 35px;
+    margin: 8px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    margin: 7px 4px;
+}
+
+
+.fecebook-form-cadastro input[type="password"] {
+    background: linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150));
+    width: 420px;
+    height: 35px;
+    margin: 8px 0;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+
+.box-login > label {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    font-size: 20px;
+    color: #1e88e5;
+}
+.box-Cadastro > label {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    font-size: 20px;
+    color: #1e88e5;
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+form > .mb-2{
+    margin: 20px 0 0 0;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, rgb(28, 216, 210), rgb(147, 237, 199));
+}
+form > .mb-3{
+    border: none;
+    color: white;
+    background: linear-gradient(to right, rgb(82, 194, 52), rgb(6, 23, 0));
+}
+
+form > button, span{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+span::before{
+content: '';
+background: linear-gradient(to right, rgb(72, 85, 99), rgb(41, 50, 60));
+width: 80px;
+height: 1px;
+margin:10px;
+}
+span::after{
+content: '';
+background: linear-gradient(to right, rgb(72, 85, 99), rgb(41, 50, 60));
+width: 80px;
+height: 1px;
+margin:10px;
+}
+.form-input i {
+position: absolute;
+}
+::-webkit-input-placeholder {  
+    color: white;  
+}
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px rgb(97, 90, 194) inset;
+}
+.icon {
+    color: white;
+    width: 30px;
+    margin:18px;
+}
+.flex-row-input > .icon{
+    color: white;
+    width: 20px;
+    margin:200px;
+}
+select {
+border: none;
+color: white;
+background:linear-gradient(to right, rgb(168, 192, 255), rgb(43, 77, 150));
+padding: 5px;
+width: 100px;
+margin: 2px;
+}
+button {
+    background:linear-gradient(to right, rgb(168, 192, 255), rgb(20, 17, 179));
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/*  */
+/* responsive */
+
+@media only screen and (max-width:837px){
+    .fecebook-form-cadastro  input[type="text"]  {
+        max-width:200px;
+        font-size: 11px;
+    }
+    form > .flex-row-input{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .icon {
+        width: 28px;
+        margin:18px 8px;
+    }
+}
