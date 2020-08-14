@@ -1,2 +1,2 @@
 # Projeto-em-desenvolvimento
-pagina de login  e cadasteo com cores  escuras, responsivo , etc
+pagina de login  e cadastro com cores  escuras, responsivo , etc
